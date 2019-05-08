@@ -179,7 +179,6 @@ public class EthereumClient: EthereumClientProtocol {
             let group = DispatchGroup()
             group.enter()
             
-            
             guard let address = keyStore.addresses?.first else {
                 return
             }

@@ -22,7 +22,7 @@ public protocol EthereumClientProtocol {
     func eth_getBalance(address: String, block: EthereumBlock, completion: @escaping((EthereumClientError?, BigUInt?) -> Void))
     func eth_getCode(address: String, block: EthereumBlock, completion: @escaping((EthereumClientError?, String?) -> Void))
     
-    func eth_sendRawTransaction(_ transaction: EthereumTransaction, withAccount keyStore: BIP32Keystore, completion: @escaping((EthereumClientError?, String?) -> Void))
+    func eth_sendRawTransaction(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping((EthereumClientError?, String?) -> Void))
     
     func eth_getTransactionCount(address: String, block: EthereumBlock, completion: @escaping((EthereumClientError?, Int?) -> Void))
     func eth_getTransaction(byHash txHash: String, completion: @escaping((EthereumClientError?, EthereumTransaction?) -> Void))
@@ -173,7 +173,7 @@ public class EthereumClient: EthereumClientProtocol {
     }
     
     
-    public func eth_sendRawTransaction(_ transaction: EthereumTransaction, withAccount keyStore: BIP32Keystore, completion: @escaping((EthereumClientError?, String?) -> Void)) {
+    public func eth_sendRawTransaction(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping((EthereumClientError?, String?) -> Void)) {
         
         concurrentQueue.addOperation {
             let group = DispatchGroup()

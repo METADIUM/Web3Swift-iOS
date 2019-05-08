@@ -9,7 +9,7 @@
 import Foundation
 
 public extension ABIFunction {
-    public func execute(withClient client: EthereumClient, account: BIP32Keystore, completion: @escaping((EthereumClientError?, String?) -> Void)) {
+    public func execute(withClient client: EthereumClient, account: EthereumKeystoreV3, completion: @escaping((EthereumClientError?, String?) -> Void)) {
         
         guard let tx = try? self.transaction() else {
             return completion(EthereumClientError.encodeIssue, nil)

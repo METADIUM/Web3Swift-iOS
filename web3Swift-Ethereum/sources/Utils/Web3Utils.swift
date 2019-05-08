@@ -22,6 +22,8 @@ class Web3Utils: NSObject {
             return self.publicToAddressData(key)
         }
         
+        
+        
         var stipped = publicKey
         if (stipped.count == 65) {
             if (stipped[0] != 4) {
@@ -44,6 +46,8 @@ class Web3Utils: NSObject {
         return EthereumAddress(address)!
     }
 
+    
+    
     
     
     /// Various units used in Ethereum ecosystem

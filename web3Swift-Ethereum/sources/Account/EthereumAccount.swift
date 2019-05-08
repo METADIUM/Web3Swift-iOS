@@ -18,7 +18,7 @@ protocol EthereumAccountProtocol {
 //    // For non-Keystore formats. This is not recommended, however some apps may wish to implement their own storage.
 //    init(keyStorage: EthereumKeyStorageProtocol) throws
     
-    init(keyStore: BIP32Keystore) throws
+    init(keyStore: EthereumKeystoreV3) throws
     
     func sign(data: Data) throws -> Data
     func sign(hash: String) throws -> Data
@@ -62,7 +62,7 @@ public class EthereumAccount: EthereumAccountProtocol {
         }
     }
     
-    required public init(keyStore: BIP32Keystore) throws {
+    required public init(keyStore: EthereumKeystoreV3) throws {
         
         do {
             let privateKey = try keyStore.UNSAFE_getPrivateKeyData(password: "", account: keyStore.addresses!.first!)

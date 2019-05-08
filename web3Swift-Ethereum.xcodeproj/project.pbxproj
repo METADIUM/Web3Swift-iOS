@@ -77,8 +77,8 @@
 		E39EF78F227844D3009D3D33 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = E39EF78C227844D3009D3D33 /* aes.c */; };
 		E39EF790227844D3009D3D33 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = E39EF78E227844D3009D3D33 /* aes.h */; };
 		E3B73786226EA4F900A0C1B4 /* ABIFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73785226EA4F900A0C1B4 /* ABIFunction.swift */; };
-		E3B73788226ECD5E00A0C1B4 /* Web3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */; };
-		E3B7378A226EF22E00A0C1B4 /* MHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73789226EF22E00A0C1B4 /* MHelper.swift */; };
+		E3E57A952282F186004E581B /* MHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73789226EF22E00A0C1B4 /* MHelper.swift */; };
+		E3E57A962282F18A004E581B /* Web3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */; };
 		E3E8D3C72276E3B100B486DC /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D3C62276E3B100B486DC /* EthereumTransaction.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +87,7 @@
 		C54CD923D2D45F1D91678ACF /* Pods-web3Swift-Ethereum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3Swift-Ethereum.release.xcconfig"; path = "Target Support Files/Pods-web3Swift-Ethereum/Pods-web3Swift-Ethereum.release.xcconfig"; sourceTree = "<group>"; };
 		DCFA2A728453180DAE8006B5 /* Pods_web3Swift_Ethereum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3Swift_Ethereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32CCEBE22686CF800B3A455 /* web3Swift_Ethereum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = web3Swift_Ethereum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E32CCEC122686CF800B3A455 /* web3Swift-Ethereum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "web3Swift-Ethereum.h"; sourceTree = "<group>"; };
+		E32CCEC122686CF800B3A455 /* web3Swift-Ethereum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "web3Swift-Ethereum.h"; sourceTree = "<group>"; };
 		E32CCEC222686CF800B3A455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32CCED12268743500B3A455 /* keccak-tiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "keccak-tiny.h"; sourceTree = "<group>"; };
 		E32CCED22268743500B3A455 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
@@ -567,9 +567,9 @@
 				E39EF78A227844C4009D3D33 /* AesUtil.swift in Sources */,
 				E32CCF9A2268743600B3A455 /* EthereumNetwork.swift in Sources */,
 				E32CCF692268743500B3A455 /* ABIRawType.swift in Sources */,
-				E3B7378A226EF22E00A0C1B4 /* MHelper.swift in Sources */,
 				E32CCF762268743600B3A455 /* ABIRawType+Static.swift in Sources */,
 				E32CCF812268743600B3A455 /* KeyDerivation.swift in Sources */,
+				E3E57A952282F186004E581B /* MHelper.swift in Sources */,
 				E32CCF822268743600B3A455 /* HexExtensions.swift in Sources */,
 				E32CCF7F2268743600B3A455 /* KeyUtil.swift in Sources */,
 				E32CCF972268743600B3A455 /* EthereumBlockInfo.swift in Sources */,
@@ -577,8 +577,8 @@
 				E32CCF652268743500B3A455 /* ENSResolverContract.swift in Sources */,
 				E33304CC22698E2B003D215A /* NativeTypesEncoding+Extensions.swift in Sources */,
 				E32CCF8C2268743600B3A455 /* BIP32Keystore.swift in Sources */,
-				E3B73788226ECD5E00A0C1B4 /* Web3Utils.swift in Sources */,
 				E32CCF6B2268743500B3A455 /* ABIDecoder.swift in Sources */,
+				E3E57A962282F18A004E581B /* Web3Utils.swift in Sources */,
 				E39EF7872277E919009D3D33 /* EthereumAccount.swift in Sources */,
 				E33304C722698E2B003D215A /* CryptoExtensions.swift in Sources */,
 				E32CCF9C2268743600B3A455 /* EthereumClient.swift in Sources */,

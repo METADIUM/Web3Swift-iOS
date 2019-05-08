@@ -6,7 +6,7 @@
 //  Copyright © 2018 coinplug. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import CryptoSwift
 import BigInt
 import EthereumAddress

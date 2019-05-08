@@ -6,7 +6,7 @@
 //  Copyright © 2019 metadium. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import secp256k1_swift
 import EthereumAddress
 import BigInt

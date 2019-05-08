@@ -159,7 +159,7 @@
 		E39EF78D227844D3009D3D33 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		E39EF78E227844D3009D3D33 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		E3B73785226EA4F900A0C1B4 /* ABIFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIFunction.swift; sourceTree = "<group>"; };
-		E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Utils.swift; sourceTree = "<group>"; };
+		E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Utils.swift; sourceTree = "<group>"; };
 		E3B73789226EF22E00A0C1B4 /* MHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHelper.swift; sourceTree = "<group>"; };
 		E3E8D3C62276E3B100B486DC /* EthereumTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */

@@ -12,6 +12,7 @@ import EthereumAddress
 import BigInt
 
 class Web3Utils: NSObject {
+    
     public static func publicToAddressData(_ publicKey: Data) -> Data? {
         if publicKey.count == 33 {
             guard let key = SECP256K1.combineSerializedPublicKeys(keys: [publicKey], outputCompressed: false) else {
@@ -42,6 +43,7 @@ class Web3Utils: NSObject {
         
         return EthereumAddress(address)!
     }
+
     
     
     /// Various units used in Ethereum ecosystem

@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 web3 API and BIP44 KeyStore 
                    DESC
 
-  spec.homepage     = 'https://jinsikhan@bitbucket.org/coinplugin/web3swift'
+  spec.homepage     = 'https://jinsikhan@bitbucket.org/coinplugin/ios-web3swift'
 
   spec.license      = 'MIT'
 
@@ -20,7 +20,7 @@ web3 API and BIP44 KeyStore
   spec.swift_version = '4.1'
   spec.module_name = 'web3Swift'
 
-  spec.source       = { :git => 'https://jinsikhan@bitbucket.org/coinplugin/web3swift.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://jinsikhan@bitbucket.org/coinplugin/ios-web3swift.git', :tag => spec.version.to_s }
 
 
   spec.source_files = 'web3Swift-Ethereum/web3Swift-Ethereum.h', 'web3Swift-Ethereum/sources/**/*.swift', 'web3Swift-Ethereum/lib/**/*.{c,h}'

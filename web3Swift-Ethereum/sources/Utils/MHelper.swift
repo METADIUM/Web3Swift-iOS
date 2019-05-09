@@ -4,7 +4,7 @@
 //
 //  Created by hanjinsik on 19/11/2018.
 //  Copyright © 2018 coinplug. All rights reserved.
-//  jshan test
+//
 
 import Foundation
 import CryptoSwift
@@ -110,6 +110,8 @@ public class MHelper {
     }
     
     
+    
+    
     class func getInt32Byte(int: BigUInt) -> Data {
         let bytes = int.bytes // should be <= 32 bytes
         let byte = [UInt8](repeating: 0x00, count: 32 - bytes.count) + bytes
@@ -118,11 +120,15 @@ public class MHelper {
         return data
     }
     
+    
+    
     class func getContractEncodedData(contract: EthereumJSONContract, args: [String]) -> Data {
         let encodedData = try? contract.data(function: (contract.functions[0]), args: args)
         
         return encodedData!
     }
+    
+    
     
     
     class func signOfAccount(account: EthereumAccount, orignData: Data) -> String {

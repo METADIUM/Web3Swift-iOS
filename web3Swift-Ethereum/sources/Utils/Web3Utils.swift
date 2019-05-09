@@ -6,6 +6,7 @@
 //  Copyright © 2019 metadium. All rights reserved.
 //
 
+
 import Foundation
 import secp256k1_swift
 import EthereumAddress
@@ -21,7 +22,6 @@ public class Web3Utils {
             
             return self.publicToAddressData(key)
         }
-        
         
         
         var stipped = publicKey
@@ -83,6 +83,8 @@ public class Web3Utils {
     }
     
     
+    
+    
     /// Parse a user-supplied string using the number of decimals for particular Ethereum unit.
     /// If input is non-numeric or precision is not sufficient - returns nil.
     /// Allowed decimal separators are ".", ",".
@@ -90,6 +92,7 @@ public class Web3Utils {
         let unitDecimals = units.decimals
         return parseToBigUInt(amount, decimals: unitDecimals)
     }
+    
     
     /// Parse a user-supplied string using the number of decimals.
     /// If input is non-numeric or precision is not sufficient - returns nil.
@@ -150,6 +153,7 @@ public class Web3Utils {
         return formatToPrecision(bigNumber, numberDecimals: toUnits.decimals, formattingDecimals: decimals, decimalSeparator: decimalSeparator, fallbackToScientific: fallbackToScientific);
     }
     
+    
     /// Formats a BigUInt object to String. The supplied number is first divided into integer and decimal part based on "numberDecimals",
     /// then limits the decimal part to "formattingDecimals" symbols and uses a "decimalSeparator" as a separator.
     /// Fallbacks to scientific format if higher precision is required.
@@ -206,6 +210,7 @@ public class Web3Utils {
         }
         return String(quotient) + decimalSeparator + remainderPadded
     }
+    
     
     
     /// Hashes a personal message by first padding it with the "\u{19}Ethereum Signed Message:\n" string and message length string.

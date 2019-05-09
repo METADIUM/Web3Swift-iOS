@@ -11,7 +11,7 @@ import CryptoSwift
 import BigInt
 import EthereumAddress
 
-class MHelper: NSObject {
+public class MHelper {
 
     class func getEvent(receipt: EthereumTransactionReceipt, string: String) -> NSDictionary {
         

@@ -11,7 +11,7 @@ import secp256k1_swift
 import EthereumAddress
 import BigInt
 
-class Web3Utils: NSObject {
+public class Web3Utils {
     
     public static func publicToAddressData(_ publicKey: Data) -> Data? {
         if publicKey.count == 33 {

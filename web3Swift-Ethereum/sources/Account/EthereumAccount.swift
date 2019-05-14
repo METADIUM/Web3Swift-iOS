@@ -25,6 +25,8 @@ protocol EthereumAccountProtocol {
     func sign(hex: String) throws -> Data
     func sign(message: Data) throws -> Data
     func sign(message: String) throws -> Data
+    func sign(msgData: Data) throws -> SignedData
+    
     func sign(_ transaction: EthereumTransaction) throws -> SignedTransaction
 }
 
@@ -65,7 +67,7 @@ public class EthereumAccount: EthereumAccountProtocol {
     required public init(keyStore: EthereumKeystoreV3) throws {
         
         do {
-            let privateKey = try keyStore.UNSAFE_getPrivateKeyData(password: "", account: keyStore.addresses!.first!)
+            let privateKey = try keyStore.UNSAFE_getPrivateKeyData(password: "web3swift", account: keyStore.addresses!.first!)
             
             self.privateKeyData = privateKey
             self.publicKeyData = try KeyUtil.generatePublicKey(from: privateKey)
@@ -131,5 +133,17 @@ public class EthereumAccount: EthereumAccountProtocol {
         } else {
             throw EthereumAccountError.signError
         }
+    }
+    
+    
+    public func sign(msgData: Data) throws -> SignedData {
+        let signature = try KeyUtil.sign(message: msgData, with: self.privateKeyData, hashing: false)
+        
+        let r = signature.subdata(in: 0..<32)
+        let s = signature.subdata(in: 32..<64)
+        
+        let v = Int(signature[64])
+        
+        return SignedData(v: v, r: r, s: s)
     }
 }

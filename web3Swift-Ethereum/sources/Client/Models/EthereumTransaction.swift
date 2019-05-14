@@ -156,3 +156,17 @@ struct SignedTransaction {
         return raw?.keccak256
     }
 }
+
+
+
+public struct SignedData {
+    let v: Int
+    let r: Data
+    let s: Data
+    
+    init(v: Int, r: Data, s: Data) {
+        self.v = v
+        self.r = r.strippingZeroesFromBytes
+        self.s = s.strippingZeroesFromBytes
+    }
+}

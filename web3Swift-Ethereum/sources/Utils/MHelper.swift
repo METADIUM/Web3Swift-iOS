@@ -82,7 +82,15 @@ public class MHelper {
                             topicCount = topicCount + 1
                         }
                         else {
-                            retrunValue[dic.object(forKey: "name")!] = decoded[dataCount] as! String
+                            let obj = decoded[dataCount]
+                            
+                            if ((obj as? Array<String>) != nil) {
+                                retrunValue[dic.object(forKey: "name")!] = decoded[dataCount] as! Array<String>
+                            }
+                            else {
+                                retrunValue[dic.object(forKey: "name")!] = decoded[dataCount] as! String
+                            }
+                            
                             dataCount = dataCount + 1
                         }
                     }

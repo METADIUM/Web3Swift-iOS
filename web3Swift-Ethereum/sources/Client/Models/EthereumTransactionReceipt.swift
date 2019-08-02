@@ -21,7 +21,7 @@ public struct EthereumTransactionReceipt: Decodable {
     public var blockHash: String
     public var blockNumber: BigUInt
     public var gasUsed: BigUInt
-    public var contractAddress: String
+//    public var contractAddress: String
     public var logs: Array<EthereumLog> = []
     var logsBloom: Data?
     public var status: EthereumTransactionReceiptStatus
@@ -44,7 +44,7 @@ public struct EthereumTransactionReceipt: Decodable {
         
         self.transactionHash = try values.decode(String.self, forKey: .transactionHash)
         self.blockHash = try values.decode(String.self, forKey: .blockHash)
-        self.contractAddress = try! values.decode(String.self, forKey: .contractAddress)
+//        self.contractAddress = try! values.decode(String.self, forKey: .contractAddress)
         
         let transactionIndexString = try values.decode(String.self, forKey: .transactionIndex)
         let blockNumberString = try values.decode(String.self, forKey: .blockNumber)

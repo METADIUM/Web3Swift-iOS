@@ -19,6 +19,7 @@ public protocol EthereumClientProtocol {
     
     func net_version(completion: @escaping((EthereumClientError?, EthereumNetwork?) -> Void))
     func eth_gasPrice(completion: @escaping((EthereumClientError?, BigUInt?) -> Void))
+    
     func eth_estimateGas(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping ((EthereumClientError?, Int?) -> Void))
     func eth_blockNumber(completion: @escaping((EthereumClientError?, Int?) -> Void))
     func eth_getBalance(address: String, block: EthereumBlock, completion: @escaping((EthereumClientError?, BigUInt?) -> Void))

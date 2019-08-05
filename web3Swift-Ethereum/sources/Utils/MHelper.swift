@@ -13,6 +13,7 @@ import EthereumAddress
 
 public class MHelper {
 
+    // getEvent
     class func getEvent(receipt: EthereumTransactionReceipt, string: String) -> NSDictionary {
         
         let abiEvent = Web3Utils.jsonStringToDictionary(string: string)! as NSDictionary

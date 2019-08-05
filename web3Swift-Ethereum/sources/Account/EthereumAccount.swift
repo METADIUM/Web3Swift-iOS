@@ -40,6 +40,8 @@ public class EthereumAccount: EthereumAccountProtocol {
     private let privateKeyData: Data
     private let publicKeyData: Data
     
+    
+    
     public lazy var privateKey: String = {
         return self.privateKeyData.hexString
     }()

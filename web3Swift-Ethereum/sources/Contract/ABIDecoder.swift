@@ -42,6 +42,11 @@ public class ABIDecoder {
                 throw ABIError.invalidValue
             }
             let size = Int(bint)
+            
+            if size == 0 {
+                return ""
+            }
+            
             let lowerRange = newOffset + 32
             let upperRange = newOffset + 32 + size - 1
             guard lowerRange <= upperRange else { throw ABIError.invalidValue }

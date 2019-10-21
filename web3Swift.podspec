@@ -10,7 +10,8 @@ Pod::Spec.new do |spec|
 web3 API and BIP44 KeyStore 
                    DESC
 
-  spec.homepage     = 'https://jinsikhan@bitbucket.org/coinplugin/ios-web3'
+
+  spec.homepage     = 'https://github.com/METADIUM/Web3Swift-iOS'
 
   spec.license      = 'MIT'
 

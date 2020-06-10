@@ -6,8 +6,6 @@
 //  Copyright © 2020 전영배. All rights reserved.
 //
 import Foundation
-
-import web3swift
 import CryptoSwift
 
 public struct ScryptKdfParams: Decodable, Encodable {
@@ -29,12 +27,12 @@ public struct CryptoParams: Decodable, Encodable {
     var mac: String
 }
 
-func scrypt (password: String, salt: Data, length: Int, N: Int, R: Int, P: Int) -> Data? {
-    guard let passwordData = password.data(using: .utf8) else {return nil}
-    guard let deriver = try? Scrypt(password: passwordData.bytes, salt: salt.bytes, dkLen: length, N: N, r: R, p: P) else {return nil}
-    guard let result = try? deriver.calculate() else {return nil}
-    return Data(result)
-}
+//func scrypt (password: String, salt: Data, length: Int, N: Int, R: Int, P: Int) -> Data? {
+//    guard let passwordData = password.data(using: .utf8) else {return nil}
+//    guard let deriver = try? Scrypt(password: passwordData.bytes, salt: salt.bytes, dkLen: length, N: N, r: R, p: P) else {return nil}
+//    guard let result = try? deriver.calculate() else {return nil}
+//    return Data(result)
+//}
 
 public enum PBEError: Error {
     case noEntropyError

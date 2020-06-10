@@ -61,6 +61,7 @@
 		E32CCF9A2268743600B3A455 /* EthereumNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CCF3E2268743500B3A455 /* EthereumNetwork.swift */; };
 		E32CCF9C2268743600B3A455 /* EthereumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CCF402268743500B3A455 /* EthereumClient.swift */; };
 		E32CCF9D2268743600B3A455 /* JSONRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CCF412268743500B3A455 /* JSONRPC.swift */; };
+		E32DA2182490A9A20008D4BA /* PBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DA2172490A9A20008D4BA /* PBE.swift */; };
 		E33304C522698E2B003D215A /* RIPEMD160+StackOveflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33304BB22698E2B003D215A /* RIPEMD160+StackOveflow.swift */; };
 		E33304C722698E2B003D215A /* CryptoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33304BD22698E2B003D215A /* CryptoExtensions.swift */; };
 		E33304C822698E2B003D215A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33304BE22698E2B003D215A /* String+Extension.swift */; };
@@ -142,6 +143,7 @@
 		E32CCF3E2268743500B3A455 /* EthereumNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumNetwork.swift; sourceTree = "<group>"; };
 		E32CCF402268743500B3A455 /* EthereumClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumClient.swift; sourceTree = "<group>"; };
 		E32CCF412268743500B3A455 /* JSONRPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRPC.swift; sourceTree = "<group>"; };
+		E32DA2172490A9A20008D4BA /* PBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBE.swift; sourceTree = "<group>"; };
 		E33304BB22698E2B003D215A /* RIPEMD160+StackOveflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIPEMD160+StackOveflow.swift"; sourceTree = "<group>"; };
 		E33304BD22698E2B003D215A /* CryptoExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoExtensions.swift; sourceTree = "<group>"; };
 		E33304BE22698E2B003D215A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				E32CCF382268743500B3A455 /* Models */,
 				E32CCF402268743500B3A455 /* EthereumClient.swift */,
 				E32CCF412268743500B3A455 /* JSONRPC.swift */,
+				E32DA2172490A9A20008D4BA /* PBE.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				E3E8D3C72276E3B100B486DC /* EthereumTransaction.swift in Sources */,
 				E32CCF722268743500B3A455 /* ABIDecoder+Static.swift in Sources */,
 				E32CCF8D2268743600B3A455 /* EthereumKeystoreV3.swift in Sources */,
+				E32DA2182490A9A20008D4BA /* PBE.swift in Sources */,
 				E33304C822698E2B003D215A /* String+Extension.swift in Sources */,
 				E32CCF672268743500B3A455 /* ENSRegistryContract.swift in Sources */,
 				E39EF78F227844D3009D3D33 /* aes.c in Sources */,

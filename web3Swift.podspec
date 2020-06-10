@@ -2,8 +2,8 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = 'web3Swift'
-  spec.version      = '1.0.9'
+  spec.name         = 'web3iOS'
+  spec.version      = '1.1.0'
   spec.summary      = 'web3 API'
 
   spec.description  = <<-DESC
@@ -21,7 +21,7 @@ web3 API and BIP44 KeyStore
   spec.swift_version = '4.1'
   spec.module_name = 'web3Swift'
 
-  spec.source       = { :git => 'https://jinsikhan@bitbucket.org/coinplugin/ios-web3.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://github.com/METADIUM/Web3Swift-iOS.git', :tag => spec.version.to_s }
 
 
   spec.source_files = 'web3Swift-Ethereum/web3Swift-Ethereum.h', 'web3Swift-Ethereum/sources/**/*.swift', 'web3Swift-Ethereum/lib/**/*.{c,h}'

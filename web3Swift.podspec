@@ -11,6 +11,7 @@ web3 API and BIP44 KeyStore
                    DESC
 
 
+
   spec.homepage     = 'https://github.com/METADIUM/Web3Swift-iOS'
 
   spec.license      = 'MIT'

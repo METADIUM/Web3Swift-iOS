@@ -77,6 +77,7 @@
 		E39EF78A227844C4009D3D33 /* AesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39EF789227844C4009D3D33 /* AesUtil.swift */; };
 		E39EF78F227844D3009D3D33 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = E39EF78C227844D3009D3D33 /* aes.c */; };
 		E39EF790227844D3009D3D33 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = E39EF78E227844D3009D3D33 /* aes.h */; };
+		E3A166002644D13F00FD0619 /* scrypt.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = E3A165FF2644D13F00FD0619 /* scrypt.podspec.json */; };
 		E3B73786226EA4F900A0C1B4 /* ABIFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73785226EA4F900A0C1B4 /* ABIFunction.swift */; };
 		E3E57A952282F186004E581B /* MHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73789226EF22E00A0C1B4 /* MHelper.swift */; };
 		E3E57A962282F18A004E581B /* Web3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */; };
@@ -160,6 +161,7 @@
 		E39EF78C227844D3009D3D33 /* aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes.c; sourceTree = "<group>"; };
 		E39EF78D227844D3009D3D33 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		E39EF78E227844D3009D3D33 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		E3A165FF2644D13F00FD0619 /* scrypt.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scrypt.podspec.json; sourceTree = SOURCE_ROOT; };
 		E3B73785226EA4F900A0C1B4 /* ABIFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIFunction.swift; sourceTree = "<group>"; };
 		E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Utils.swift; sourceTree = "<group>"; };
 		E3B73789226EF22E00A0C1B4 /* MHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHelper.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				E32CCECF2268743500B3A455 /* lib */,
 				E32CCEC122686CF800B3A455 /* web3Swift-Ethereum.h */,
 				E32CCEC222686CF800B3A455 /* Info.plist */,
+				E3A165FF2644D13F00FD0619 /* scrypt.podspec.json */,
 			);
 			path = "web3Swift-Ethereum";
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A166002644D13F00FD0619 /* scrypt.podspec.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

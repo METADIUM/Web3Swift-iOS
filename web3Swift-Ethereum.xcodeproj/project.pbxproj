@@ -81,6 +81,11 @@
 		E3E57A952282F186004E581B /* MHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73789226EF22E00A0C1B4 /* MHelper.swift */; };
 		E3E57A962282F18A004E581B /* Web3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */; };
 		E3E8D3C72276E3B100B486DC /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D3C62276E3B100B486DC /* EthereumTransaction.swift */; };
+		EC4D81A72648CA43007D9015 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EC4D81A02648CA42007D9015 /* LICENSE */; };
+		EC4D81A82648CA43007D9015 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EC4D81A12648CA42007D9015 /* README.md */; };
+		EC4D81A92648CA43007D9015 /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4D81A32648CA42007D9015 /* scrypt.h */; };
+		EC4D81AA2648CA43007D9015 /* PointerArithmeticsImplimentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D81A52648CA42007D9015 /* PointerArithmeticsImplimentation.swift */; };
+		EC4D81AB2648CA43007D9015 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D81A62648CA42007D9015 /* Scrypt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +169,11 @@
 		E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Utils.swift; sourceTree = "<group>"; };
 		E3B73789226EF22E00A0C1B4 /* MHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHelper.swift; sourceTree = "<group>"; };
 		E3E8D3C62276E3B100B486DC /* EthereumTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
+		EC4D81A02648CA42007D9015 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EC4D81A12648CA42007D9015 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EC4D81A32648CA42007D9015 /* scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrypt.h; sourceTree = "<group>"; };
+		EC4D81A52648CA42007D9015 /* PointerArithmeticsImplimentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointerArithmeticsImplimentation.swift; sourceTree = "<group>"; };
+		EC4D81A62648CA42007D9015 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +256,7 @@
 		E32CCEFC2268743500B3A455 /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				EC4D819F2648CA42007D9015 /* scrypt */,
 				E33304B922698E2B003D215A /* Convenience */,
 				E32CCF262268743500B3A455 /* KeystoreManager */,
 				E32CCEFD2268743500B3A455 /* ENS */,
@@ -441,6 +452,34 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
+		EC4D819F2648CA42007D9015 /* scrypt */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D81A02648CA42007D9015 /* LICENSE */,
+				EC4D81A12648CA42007D9015 /* README.md */,
+				EC4D81A22648CA42007D9015 /* scrypt */,
+			);
+			path = scrypt;
+			sourceTree = "<group>";
+		};
+		EC4D81A22648CA42007D9015 /* scrypt */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D81A32648CA42007D9015 /* scrypt.h */,
+				EC4D81A42648CA42007D9015 /* Swift */,
+			);
+			path = scrypt;
+			sourceTree = "<group>";
+		};
+		EC4D81A42648CA42007D9015 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D81A52648CA42007D9015 /* PointerArithmeticsImplimentation.swift */,
+				EC4D81A62648CA42007D9015 /* Scrypt.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -451,6 +490,7 @@
 				E39EF790227844D3009D3D33 /* aes.h in Headers */,
 				E32CCF422268743500B3A455 /* keccak-tiny.h in Headers */,
 				E32CCEC322686CF800B3A455 /* web3Swift-Ethereum.h in Headers */,
+				EC4D81A92648CA43007D9015 /* scrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +553,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4D81A82648CA43007D9015 /* README.md in Resources */,
+				EC4D81A72648CA43007D9015 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,10 +650,12 @@
 				E32CCF8B2268743600B3A455 /* BIP39+WordLists.swift in Sources */,
 				E3E8D3C72276E3B100B486DC /* EthereumTransaction.swift in Sources */,
 				E32CCF722268743500B3A455 /* ABIDecoder+Static.swift in Sources */,
+				EC4D81AB2648CA43007D9015 /* Scrypt.swift in Sources */,
 				E32CCF8D2268743600B3A455 /* EthereumKeystoreV3.swift in Sources */,
 				E32DA2182490A9A20008D4BA /* PBE.swift in Sources */,
 				E33304C822698E2B003D215A /* String+Extension.swift in Sources */,
 				E32CCF672268743500B3A455 /* ENSRegistryContract.swift in Sources */,
+				EC4D81AA2648CA43007D9015 /* PointerArithmeticsImplimentation.swift in Sources */,
 				E39EF78F227844D3009D3D33 /* aes.c in Sources */,
 				E32CCF832268743600B3A455 /* String+Numeric.swift in Sources */,
 				E32CCF782268743600B3A455 /* ERC20Functions.swift in Sources */,

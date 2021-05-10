@@ -1,42 +1,38 @@
 PODS:
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
-  - CryptoSwift (0.15.0)
-  - EthereumAddress (1.1.0):
-    - CryptoSwift (~> 0.13)
-  - scrypt (2.0):
-    - CryptoSwift (~> 0.11)
+  - CryptoSwift (1.4.0)
+  - EthereumAddress (1.3.0):
+    - CryptoSwift (~> 1.0)
   - secp256k1_swift (1.0.3)
   - SipHash (1.2.2)
   - SwiftRLP (1.2):
     - BigInt (~> 3.1)
 
 DEPENDENCIES:
-  - BigInt (~> 3.1)
-  - EthereumAddress (~> 1.1.0)
-  - scrypt (~> 2.0)
+  - BigInt
+  - CryptoSwift
+  - EthereumAddress
   - secp256k1_swift (~> 1.0.3)
   - SwiftRLP (~> 1.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - BigInt
     - CryptoSwift
     - EthereumAddress
-    - scrypt
     - secp256k1_swift
     - SipHash
     - SwiftRLP
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
-  CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
-  EthereumAddress: 7a948eff69b004daffe719860c772496af4f4fd7
-  scrypt: 3fe5b1a3b0976f97cd87488673a8f7c65708cc84
+  CryptoSwift: 7cc902df1784de3b389a387756c7d710f197730c
+  EthereumAddress: 39fe8e11cf04e4e9902b55ae653dbc4e0aee5f30
   secp256k1_swift: 4fc5c4b2d2c6d21ee8ccb868cdc92da12f38bed9
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   SwiftRLP: 98a02b2210128353ca02e4c2f4d83e2a9796db4f
 
-PODFILE CHECKSUM: 46db07f81763c21c18017d8478ad1dd394ca41e6
+PODFILE CHECKSUM: 05fd0304e8ee3443b4440e9342dac9f63260c43c
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.10.1

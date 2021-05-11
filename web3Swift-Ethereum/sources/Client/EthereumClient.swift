@@ -20,6 +20,7 @@ public protocol EthereumClientProtocol {
     func net_version(completion: @escaping((EthereumClientError?, EthereumNetwork?) -> Void))
     func eth_gasPrice(completion: @escaping((EthereumClientError?, BigUInt?) -> Void))
     
+    func eth_estimateGasWithData(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping ((EthereumClientError?, Int?) -> Void))
     func eth_estimateGas(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping ((EthereumClientError?, Int?) -> Void))
     func eth_blockNumber(completion: @escaping((EthereumClientError?, Int?) -> Void))
     func eth_getBalance(address: String, block: EthereumBlock, completion: @escaping((EthereumClientError?, BigUInt?) -> Void))
@@ -120,6 +121,18 @@ public class EthereumClient: EthereumClientProtocol {
         EthereumRPC.execute(session: session, url: url, method: "eth_gasPrice", params: emptyParams, receive: String.self) { (error, response) in
             if let hexString = response as? String {
                 completion(nil, BigUInt(hex: hexString))
+            } else {
+                completion(EthereumClientError.unexpectedReturnValue, nil)
+            }
+        }
+    }
+    
+    
+    public func eth_estimateGasWithData(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping ((EthereumClientError?, Int?) -> Void)) {
+        EthereumRPC.execute(session: self.session, url: self.url, method: "eth_estimateGas", params: [["from": transaction.from, "to": transaction.to, "nonce": "0x01", "data": transaction.data?.toHexString().addHexPrefix()]], receive: String.self) { (error, response) in
+            if let resDataString = response as? String {
+                let count = Int(hex: resDataString)
+                completion(nil, count)
             } else {
                 completion(EthereumClientError.unexpectedReturnValue, nil)
             }

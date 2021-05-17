@@ -81,11 +81,12 @@
 		E3E57A952282F186004E581B /* MHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73789226EF22E00A0C1B4 /* MHelper.swift */; };
 		E3E57A962282F18A004E581B /* Web3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */; };
 		E3E8D3C72276E3B100B486DC /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D3C62276E3B100B486DC /* EthereumTransaction.swift */; };
-		EC4D81A72648CA43007D9015 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EC4D81A02648CA42007D9015 /* LICENSE */; };
-		EC4D81A82648CA43007D9015 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EC4D81A12648CA42007D9015 /* README.md */; };
-		EC4D81A92648CA43007D9015 /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4D81A32648CA42007D9015 /* scrypt.h */; };
-		EC4D81AA2648CA43007D9015 /* PointerArithmeticsImplimentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D81A52648CA42007D9015 /* PointerArithmeticsImplimentation.swift */; };
-		EC4D81AB2648CA43007D9015 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D81A62648CA42007D9015 /* Scrypt.swift */; };
+		EC841EAC2651F4D70039A55E /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC841EA92651F4D70039A55E /* Scrypt.swift */; };
+		EC841EAD2651F4D70039A55E /* Salsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC841EAA2651F4D70039A55E /* Salsa.swift */; };
+		EC841EAE2651F4D70039A55E /* BufferStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC841EAB2651F4D70039A55E /* BufferStorage.swift */; };
+		EC841EB42651F56D0039A55E /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = EC841EB02651F56D0039A55E /* scrypt.h */; };
+		EC841EB52651F56D0039A55E /* Cimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = EC841EB12651F56D0039A55E /* Cimpl.h */; };
+		EC841EB62651F56D0039A55E /* Cimpl.c in Sources */ = {isa = PBXBuildFile; fileRef = EC841EB32651F56D0039A55E /* Cimpl.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,11 +170,13 @@
 		E3B73787226ECD5E00A0C1B4 /* Web3Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Utils.swift; sourceTree = "<group>"; };
 		E3B73789226EF22E00A0C1B4 /* MHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHelper.swift; sourceTree = "<group>"; };
 		E3E8D3C62276E3B100B486DC /* EthereumTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
-		EC4D81A02648CA42007D9015 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EC4D81A12648CA42007D9015 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EC4D81A32648CA42007D9015 /* scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrypt.h; sourceTree = "<group>"; };
-		EC4D81A52648CA42007D9015 /* PointerArithmeticsImplimentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointerArithmeticsImplimentation.swift; sourceTree = "<group>"; };
-		EC4D81A62648CA42007D9015 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		EC841EA92651F4D70039A55E /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		EC841EAA2651F4D70039A55E /* Salsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salsa.swift; sourceTree = "<group>"; };
+		EC841EAB2651F4D70039A55E /* BufferStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferStorage.swift; sourceTree = "<group>"; };
+		EC841EB02651F56D0039A55E /* scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrypt.h; sourceTree = "<group>"; };
+		EC841EB12651F56D0039A55E /* Cimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cimpl.h; sourceTree = "<group>"; };
+		EC841EB22651F56D0039A55E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		EC841EB32651F56D0039A55E /* Cimpl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Cimpl.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,7 @@
 		E32CCECF2268743500B3A455 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				EC841EAF2651F56D0039A55E /* scrypt */,
 				E39EF78B227844D3009D3D33 /* aes */,
 				E32CCED02268743500B3A455 /* keccak-tiny */,
 			);
@@ -256,7 +260,7 @@
 		E32CCEFC2268743500B3A455 /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				EC4D819F2648CA42007D9015 /* scrypt */,
+				EC841EA82651F4D70039A55E /* scrypt */,
 				E33304B922698E2B003D215A /* Convenience */,
 				E32CCF262268743500B3A455 /* KeystoreManager */,
 				E32CCEFD2268743500B3A455 /* ENS */,
@@ -452,32 +456,25 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
-		EC4D819F2648CA42007D9015 /* scrypt */ = {
+		EC841EA82651F4D70039A55E /* scrypt */ = {
 			isa = PBXGroup;
 			children = (
-				EC4D81A02648CA42007D9015 /* LICENSE */,
-				EC4D81A12648CA42007D9015 /* README.md */,
-				EC4D81A22648CA42007D9015 /* scrypt */,
+				EC841EA92651F4D70039A55E /* Scrypt.swift */,
+				EC841EAA2651F4D70039A55E /* Salsa.swift */,
+				EC841EAB2651F4D70039A55E /* BufferStorage.swift */,
 			);
 			path = scrypt;
 			sourceTree = "<group>";
 		};
-		EC4D81A22648CA42007D9015 /* scrypt */ = {
+		EC841EAF2651F56D0039A55E /* scrypt */ = {
 			isa = PBXGroup;
 			children = (
-				EC4D81A32648CA42007D9015 /* scrypt.h */,
-				EC4D81A42648CA42007D9015 /* Swift */,
+				EC841EB02651F56D0039A55E /* scrypt.h */,
+				EC841EB12651F56D0039A55E /* Cimpl.h */,
+				EC841EB22651F56D0039A55E /* module.modulemap */,
+				EC841EB32651F56D0039A55E /* Cimpl.c */,
 			);
 			path = scrypt;
-			sourceTree = "<group>";
-		};
-		EC4D81A42648CA42007D9015 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				EC4D81A52648CA42007D9015 /* PointerArithmeticsImplimentation.swift */,
-				EC4D81A62648CA42007D9015 /* Scrypt.swift */,
-			);
-			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,7 +487,8 @@
 				E39EF790227844D3009D3D33 /* aes.h in Headers */,
 				E32CCF422268743500B3A455 /* keccak-tiny.h in Headers */,
 				E32CCEC322686CF800B3A455 /* web3Swift-Ethereum.h in Headers */,
-				EC4D81A92648CA43007D9015 /* scrypt.h in Headers */,
+				EC841EB42651F56D0039A55E /* scrypt.h in Headers */,
+				EC841EB52651F56D0039A55E /* Cimpl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,8 +551,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4D81A82648CA43007D9015 /* README.md in Resources */,
-				EC4D81A72648CA43007D9015 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +596,7 @@
 				E32CCF6F2268743500B3A455 /* ABIEncoder+JSON.swift in Sources */,
 				E32CCF842268743600B3A455 /* Data+Random.swift in Sources */,
 				E32CCF682268743500B3A455 /* EthereumNameService.swift in Sources */,
+				EC841EAD2651F4D70039A55E /* Salsa.swift in Sources */,
 				E32CCF6E2268743500B3A455 /* ABIRawType+JSON.swift in Sources */,
 				E32CCF992268743600B3A455 /* EthereumLog.swift in Sources */,
 				E32CCF792268743600B3A455 /* ERC20Events.swift in Sources */,
@@ -614,6 +611,7 @@
 				E32CCF692268743500B3A455 /* ABIRawType.swift in Sources */,
 				E32CCF762268743600B3A455 /* ABIRawType+Static.swift in Sources */,
 				E32CCF812268743600B3A455 /* KeyDerivation.swift in Sources */,
+				EC841EAC2651F4D70039A55E /* Scrypt.swift in Sources */,
 				E3E57A952282F186004E581B /* MHelper.swift in Sources */,
 				E32CCF822268743600B3A455 /* HexExtensions.swift in Sources */,
 				E32CCF7F2268743600B3A455 /* KeyUtil.swift in Sources */,
@@ -627,6 +625,7 @@
 				E39EF7872277E919009D3D33 /* EthereumAccount.swift in Sources */,
 				E33304C722698E2B003D215A /* CryptoExtensions.swift in Sources */,
 				E32CCF9C2268743600B3A455 /* EthereumClient.swift in Sources */,
+				EC841EAE2651F4D70039A55E /* BufferStorage.swift in Sources */,
 				E32CCF902268743600B3A455 /* AbstractKeystore.swift in Sources */,
 				E32CCF702268743500B3A455 /* ABIJSONEntry.swift in Sources */,
 				E32CCF6D2268743500B3A455 /* ABIDecoder+JSON.swift in Sources */,
@@ -638,6 +637,7 @@
 				E39EF7862277E919009D3D33 /* EthereumAccount+SignTransaction.swift in Sources */,
 				E33304CE22698E2B003D215A /* Array+Extension.swift in Sources */,
 				E32CCF6A2268743500B3A455 /* ABIEncoder.swift in Sources */,
+				EC841EB62651F56D0039A55E /* Cimpl.c in Sources */,
 				E32CCF7C2268743600B3A455 /* RLP.swift in Sources */,
 				E32CCF662268743500B3A455 /* ENSContracts.swift in Sources */,
 				E32CCF952268743600B3A455 /* EthereumTransactionReceipt.swift in Sources */,
@@ -650,12 +650,10 @@
 				E32CCF8B2268743600B3A455 /* BIP39+WordLists.swift in Sources */,
 				E3E8D3C72276E3B100B486DC /* EthereumTransaction.swift in Sources */,
 				E32CCF722268743500B3A455 /* ABIDecoder+Static.swift in Sources */,
-				EC4D81AB2648CA43007D9015 /* Scrypt.swift in Sources */,
 				E32CCF8D2268743600B3A455 /* EthereumKeystoreV3.swift in Sources */,
 				E32DA2182490A9A20008D4BA /* PBE.swift in Sources */,
 				E33304C822698E2B003D215A /* String+Extension.swift in Sources */,
 				E32CCF672268743500B3A455 /* ENSRegistryContract.swift in Sources */,
-				EC4D81AA2648CA43007D9015 /* PointerArithmeticsImplimentation.swift in Sources */,
 				E39EF78F227844D3009D3D33 /* aes.c in Sources */,
 				E32CCF832268743600B3A455 /* String+Numeric.swift in Sources */,
 				E32CCF782268743600B3A455 /* ERC20Functions.swift in Sources */,

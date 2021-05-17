@@ -26,14 +26,13 @@ web3 API and BIP44 KeyStore
 
 
   spec.source_files = 'web3Swift-Ethereum/web3Swift-Ethereum.h', 'web3Swift-Ethereum/sources/**/*.swift', 'web3Swift-Ethereum/lib/**/*.{c,h}'
-  spec.exclude_files = 'web3Swift-Ethereum/*.plist'
 
   spec.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => '$(PODS_TARGET_SRCROOT)/web3Swift-Ethereum/lib/**',
     'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '$(PODS_TARGET_SRCROOT)/web3Swift-Ethereum/lib/**'
   }
 
-  spec.preserve_paths = 'web3Swift-Ethereum/lib/**/module.map'
+  spec.preserve_paths = 'web3Swift-Ethereum/lib/**/module.map', 'web3Swift-Ethereum/lib/**/module.modulemap'
   spec.public_header_files = 'web3Swift-Ethereum/web3Swift-Ethereum.h'
 
   spec.dependency 'BigInt'

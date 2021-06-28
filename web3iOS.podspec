@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'web3iOS'
-  spec.version      = '1.1.8'
+  spec.version      = '1.1.9'
   spec.summary      = 'web3 API'
 
   spec.description  = <<-DESC

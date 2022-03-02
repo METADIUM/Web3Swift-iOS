@@ -1,10 +1,10 @@
 
 def import_pods
-  pod 'BigInt'
-  pod 'EthereumAddress'
+  pod 'BigInt', '~> 3.1.0'
+  pod 'EthereumAddress', '~> 1.3.0'
   pod 'SwiftRLP', '~> 1.1'
   pod 'secp256k1_swift', '~> 1.0.3', :modular_headers => true
-  pod 'CryptoSwift'
+  pod 'CryptoSwift', '~> 1.4.0'
 end
 
 target 'web3Swift-Ethereum' do

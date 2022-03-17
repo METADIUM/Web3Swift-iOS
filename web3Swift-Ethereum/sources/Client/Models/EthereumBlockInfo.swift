@@ -12,6 +12,8 @@ public struct EthereumBlockInfo: Equatable {
     public var number: EthereumBlock
     public var timestamp: Date
     public var transactions: [String]
+    public var parentHash: String?
+    public var baseFeePerGas: String?
 }
 
 extension EthereumBlockInfo: Codable {
@@ -19,6 +21,8 @@ extension EthereumBlockInfo: Codable {
         case number
         case timestamp
         case transactions
+        case parentHash
+        case baseFeePerGas
     }
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -36,9 +40,15 @@ extension EthereumBlockInfo: Codable {
             throw JSONRPCError.decodingError
         }
         
+        let parentHash = try? container.decode(String.self, forKey: .parentHash)
+        
+        let baseFeePerGas = try? container.decode(String.self, forKey: .baseFeePerGas)
+        
         self.number = number
         self.timestamp = Date(timeIntervalSince1970: timestamp)
         self.transactions = transactions
+        self.parentHash = parentHash
+        self.baseFeePerGas = baseFeePerGas
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -47,6 +57,12 @@ extension EthereumBlockInfo: Codable {
         try container.encode(number, forKey: .number)
         try container.encode(Int(timestamp.timeIntervalSince1970).hexString, forKey: .timestamp)
         try container.encode(transactions, forKey: .transactions)
+        if let parentHash = self.parentHash {
+            try container.encode(parentHash, forKey: .parentHash)
+        }
+        if let baseFeePerGas = self.baseFeePerGas {
+            try container.encode(baseFeePerGas, forKey: .baseFeePerGas)
+        }
     }
 }
 

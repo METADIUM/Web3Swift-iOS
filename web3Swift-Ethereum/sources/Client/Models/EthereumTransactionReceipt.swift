@@ -21,6 +21,7 @@ public struct EthereumTransactionReceipt: Decodable {
     public var blockHash: String
     public var blockNumber: BigUInt
     public var gasUsed: BigUInt
+    public var gasPrice: BigUInt?
 //    public var contractAddress: String
     public var logs: Array<EthereumLog> = []
     var logsBloom: Data?
@@ -33,6 +34,7 @@ public struct EthereumTransactionReceipt: Decodable {
         case blockNumber        // Quantity
         case cumulativeGasUsed  // Quantity
         case gasUsed            // Quantity
+        case gasPrice = "effectiveGasPrice" // Quantity
         case contractAddress    // Data or null
         case logs               // Array
         case logsBloom          // Data
@@ -63,6 +65,11 @@ public struct EthereumTransactionReceipt: Decodable {
         self.status = EthereumTransactionReceiptStatus(rawValue: statusCode) ?? .notProcessed
         
         self.logs = try values.decode([EthereumLog].self, forKey: .logs)
+        
+        if let gasPriceString = try? values.decode(String.self, forKey: .gasPrice) {
+            let gasPrice = BigUInt(hex: gasPriceString)
+            self.gasPrice = gasPrice
+        }
     }
     
 }

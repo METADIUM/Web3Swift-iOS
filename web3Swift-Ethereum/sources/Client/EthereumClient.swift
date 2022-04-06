@@ -131,7 +131,7 @@ public class EthereumClient: EthereumClientProtocol {
     public func eth_estimateGasWithData(_ transaction: EthereumTransaction, withAccount keyStore: EthereumKeystoreV3, completion: @escaping ((EthereumClientError?, Int?) -> Void)) {
         let value = transaction.value ?? BigUInt(0)
         let valueHex = value.hexString.stripLeadingZeroes()
-        EthereumRPC.execute(session: self.session, url: self.url, method: "eth_estimateGas", params: [["from": transaction.from, "to": transaction.to, "value": valueHex, "nonce": "0x01", "data": transaction.data?.toHexString().addHexPrefix()]], receive: String.self) { (error, response) in
+        EthereumRPC.execute(session: self.session, url: self.url, method: "eth_estimateGas", params: [["from": transaction.from, "to": transaction.to, "value": valueHex, "nonce": "0x1", "data": transaction.data?.toHexString().addHexPrefix()]], receive: String.self) { (error, response) in
             if let resDataString = response as? String {
                 let count = Int(hex: resDataString)
                 completion(nil, count)
